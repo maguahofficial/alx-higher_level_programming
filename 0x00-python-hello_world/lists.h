@@ -5,19 +5,19 @@
 
 /**
  * struct listint_s - function singly linked list
- * @nvariable: integer variable
- * @nextvariable: The points to the next node
+ * @n: integer variable
+ * @next: The points to the next node
  * List.hheader file
  * Description: The singly linked list node structure
  */
 typedef struct listint_s
 {
-	int nvariable;
-	struct listint_s *nextvariable;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 size_t print_listint(const listint_t *h);
-listint_t *add_nodeint(listint_t **head, const int nvariable);
+listint_t *add_nodeint(listint_t **head, const int n);
 void free_listint(listint_t *head);
 int check_cycle(listint_t *list);
 
