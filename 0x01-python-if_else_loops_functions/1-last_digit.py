@@ -11,4 +11,3 @@ elif last_numvarble == 0:
     print(f"Last digit of {number} is {last_numvarble} and is 0")
 else:
     print(f"Last digit of {number} is {last_numvarble} and is less than 6 and not 0")
-
