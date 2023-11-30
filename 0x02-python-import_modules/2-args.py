@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    """Print the number of and list of arguments."""
+    """The Code Prints the number of and list of arguments."""
     import sys
 
     countvariable = len(sys.argv) - 1
