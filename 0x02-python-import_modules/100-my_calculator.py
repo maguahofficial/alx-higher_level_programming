@@ -8,10 +8,10 @@ if __name__ == "__main__":
     if len(sys.argv) - 1 != 3:
         sys.exit(1)
 
-    ops = {"+": add, "-": sub, "*": mul, "/": div}
-    if sys.argv[2] not in list(ops.keys()):
+    opsvv = {"+": add, "-": sub, "*": mul, "/": div}
+    if sys.argv[2] not in list(opsvv.keys()):
         sys.exit(1)
 
-    aa = int(sys.argv[1])
-    bb = int(sys.argv[3])
-    print("{} {} {} = {}".format(aa, sys.argv[2], bb, ops[sys.argv[2]](aa, bb)))
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
+    print("{} {} {} = {}".format(a, sys.argv[2], b, opsvv[sys.argv[2]](a, b)))
