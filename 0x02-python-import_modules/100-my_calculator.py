@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 if __name__ == "__main__":
-    """Code Handles basic arithmetic operations."""
+
     from calculator_1 import add, sub, mul, div
     import sys
 
@@ -15,4 +15,3 @@ if __name__ == "__main__":
     aa = int(sys.argv[1])
     bb = int(sys.argv[3])
     print("{} {} {} = {}".format(aa, sys.argv[2], bb, ops[sys.argv[2]](aa, bb)))
-
