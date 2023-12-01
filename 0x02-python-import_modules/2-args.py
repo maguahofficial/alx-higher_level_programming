@@ -1,13 +1,18 @@
+#!/usr/bin/python3
 if __name__ == "__main__":
-    """The Code Prints the number of and list of arguments."""
     import sys
+    ix = len(sys.argv) - 1
 
-    countvariable = len(sys.argv) - 1
-    if countvariable == 0:
-        print("0 arguments.")
-    elif countvariable == 1:
-        print("1 argument:")
+    if ix == 0:
+        print("{} arguments.".format(ix))
+    elif ix == 1:
+        print("{} argument:".format(ix))
     else:
-        print("{} arguments:".format(countvariable))
-    for i in range(countvariable):
-        print("{}: {}".format(i + 1, sys.argv[i + 1]))
+        print("{} arguments:".format(ix))
+
+    if ix >= 1:
+        ix = 0
+        for arg in sys.argv:
+            if ix != 0:
+                print("{}: {}".format(ix, arg))
+            ix += 1
