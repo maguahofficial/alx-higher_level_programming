@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <Python.h>
+
 /**
- * print_python_list_info - The Function prints some basic
+ * print_python_list_info - The function prints some basic
  * info about Python lists
  * @p: (pointer)python list
  */
@@ -15,4 +16,3 @@ void print_python_list_info(PyObject *p)
 	for (elemvrb = 0; elemvrb < Py_SIZE(p); elemvrb++)
 		printf("Element %d: %s\n", elemvrb, Py_TYPE(PyList_GetItem(p, elemvrb))->tp_name);
 }
-
