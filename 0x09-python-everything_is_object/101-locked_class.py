@@ -1,20 +1,10 @@
 #!/usr/bin/python3
-"""This class defines a locked"""
+"""this class defines a locked."""
 
 
 class LockedClass:
     """
-    Thid class prevents the user from instantiating a new LockedClass attributes
-    for anything but attributes called 'first_name'.
-    """
-
-    __slots__ = ["first_name"]#!/usr/bin/python3
-"""This class Defines a locked."""
-
-
-class LockedClass:
-    """
-    this class prevents the user from instantiating a new LockedClass attributes
+    this class prevent the user from instantiating anew LockedClass attributes
     anything but attributes called 'first_name'.
     """
 
