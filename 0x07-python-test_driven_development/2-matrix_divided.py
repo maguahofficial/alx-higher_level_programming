@@ -1,20 +1,20 @@
 #!/usr/bin/python3
-"""Defines a matrix division function."""
+"""this class defines a matrix division function."""
 
 
 def matrix_divided(matrix, div):
-    """Divide all elements of a matrix.
+    """this function divide the elements of a matrix.
 
     Args:
-        matrix (list): A list of lists of ints or floats.
-        div (int/float): The divisor.
+        matrix (list variable):list of lists of ints or floats.
+        div (int/float variable): The divisor.
     Raises:
-        TypeError: If the matrix contains non-numbers.
-        TypeError: If the matrix contains rows of different sizes.
-        TypeError: If div is not an int or float.
-        ZeroDivisionError: If div is 0.
+        TypeError: when the matrix contains non-numbers.
+        TypeError: when the matrix contains rows of different sizes.
+        TypeError: when the div is not an int or float.
+        ZeroDivisionError: when div is 0.
     Returns:
-        A new matrix representing the result of the division.
+        Returns new matrix representing the result of the division.
     """
     if (not isinstance(matrix, list) or matrix == [] or
             not all(isinstance(row, list) for row in matrix) or
