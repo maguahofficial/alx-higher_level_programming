@@ -1,8 +1,8 @@
 ===========================
-How to Use 3-say_my_name.py
+3-say_my_name.py
 ===========================
 
-This modules defines a function ``say_my_name(first_name, last_name="")``.
+modules defines a function ``say_my_name(first_name, last_name="")``.
 
 Usage
 =====
