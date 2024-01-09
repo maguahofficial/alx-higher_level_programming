@@ -11,7 +11,7 @@ def pascal_triangle(n):
         return []
 
     trianglesxx = [[1]]
-    while len(trianglesxx) != nx:
+    while len(trianglesxx) != n:
         trixc = trianglesxx[-1]
         tmpxc = [1]
         for iv in range(len(trixc) - 1):
