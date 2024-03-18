@@ -5,13 +5,13 @@ import sys
 
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(host="localhost", user=sys.argv[1],
+    dbx = MySQLdb.connect(host="localhost", user=sys.argv[1],
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
-    curx = db.cursor()
-    curx.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
+    cur = dbx.cursor()
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
                 .format(sys.argv[4]))
-    rows = curx.fetchall()
-    for row in rows:
-        print(row)
-    curx.close()
-    db.close()
+    rows = cur.fetchall()
+    for rowx in rows:
+        print(rowx)
+    cur.close()
+    dbx.close()
