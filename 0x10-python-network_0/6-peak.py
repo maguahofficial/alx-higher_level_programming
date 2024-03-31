@@ -6,13 +6,13 @@ def find_peak(list_of_integers):
 
     if list_of_integers is None or list_of_integers == []:
         return None
-    lovvble = 0
-    hivble = len(list_of_integers)
-    mid = ((hivble - lovble) // 2) + lovble
+    lo = 0
+    hi = len(list_of_integers)
+    mid = ((hi - lo) // 2) + lo
     mid = int(mid)
-    if hivble == 1:
+    if hi == 1:
         return list_of_integers[0]
-    if hivble == 2:
+    if hi == 2:
         return max(list_of_integers)
     if list_of_integers[mid] >= list_of_integers[mid - 1] and\
             list_of_integers[mid] >= list_of_integers[mid + 1]:
